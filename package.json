@@ -1,0 +1,24 @@
+{
+  "name": "KokJalan",
+  "version": "1.0.0",
+  "description": "Understand the chaos.",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k \"pnpm --dir apps/api start:dev\" \"pnpm --dir apps/web dev\""
+  },
+  "keywords": [],
+  "author": "Gibun Maulana",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.14.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.14.0",
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
